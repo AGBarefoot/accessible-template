@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR, en">
+<head>
+<title>WCAG 2.1 | CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Flex Box, Foco Visivel e Contraste Textual: aprendizado em CSS de acordo com a WCAG 2.1."/>
+<meta name="keywords" content="Acessibilidade, CSS, Flex Box, Foco Visível, Contraste Textual, Aprendizado.">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+* {
+    box-sizing: border-box;
+  }  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }  
+  .banner {
+    padding: 5.0em;
+    text-align: center;
+    background: #f3e849;
+    color: black;
+  }  
+  .menu {
+    display: flex;
+    background-color: rgb(202, 101, 6);
+    margin-bottom: 60px;
+  }  
+  .menu a {
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+    text-align: center;
+  }  
+  .menu a:hover {
+    background-color: rgb(232, 240, 128);
+    color: black;
+  }
+  .img-responsive{
+    border-radius: 80px;
+  }
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    font-size: 18px; /* tamanho da fonte para garantir contraste aderente de acordo com as normas do WCAG 2.1 */
+  } 
+  .work-content{
+    font-size: larger; /* aumentar o espaçamento entre as linhas favorece quem possui dislexia, por exemplo.*/
+  }   
+  .contentinfo  {
+    padding: 20px;
+    text-align: center;
+    background: #f3e849;
+  }  
+  a:hover, a:visited, a:focus {
+    color: black ;
+    outline: 3px dotted;
+    padding: 1.0em;
+  }
+  .secondary {
+    padding: 3em 0; 
+    background-color:rgb(202, 101, 6);
+    color: white;
+    font-weight: 700; /* peso da fonte para garantir contraste aderente de acordo com as normas do WCAG 2.1 */
+}
+.container-secondary {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+@media screen and (max-width: 700px) {
+    .row, .menu {   
+      flex-direction: column;
+    }
+} 
+</style>
+</head>
+<body>
+<header>
+<div class="banner">
+  <h1>Template Responsivo</h1>
+  <p>Para aprender sobre <b>flex box & foco visivel e contraste textual</b> em CSS.</p>
+</div>
+<nav>
+<div class="menu">
+  <a href="#"><big>Link</big></a>
+  <a href="#"><big>Link</big></a>
+  <a href="https://www.maujor.com/tutorial/css3-modulo-box-flexivel-layout.php" target="_blank"><big>Site do Maujor</big></a>
+</div>
+</nav>
+</header>
+<section id="works" class="section works">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="work"><img src="images/1.jpg" alt="Cão em uma cadeira." class="img-responsive">
+          <div class="work-content">
+            <h3>Trabalho 1</h3><br>           
+            <p><b>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</b> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="work"> <img src="images/2.jpg" alt="Urso e dois filhotes." class="img-responsive">
+          <div class="work-content">
+            <h3>Trabalho 2</h3><br>          
+            <p><b>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="work"> <img src="images/3.jpg" alt="Ave de rapina em vôo." class="img-responsive">
+          <div class="work-content">
+            <h3>Trabalho 3</h3><br>        
+            <p><b>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="work"> <img src="images/4.jpg" alt="Cão e seu dono." class="img-responsive">
+          <div class="work-content">
+            <h3>Trabalho 4</h3><br>       
+            <p><b>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br> 
+<section class="secondary">
+  <div class="container-secondary">
+          <div class="col">             
+              <blockquote><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum eligendi repellat non nostrum. Veniam at distinctio suscipit aliquam, a dolorem quasi aliquid voluptatum odio ut molestias veniam dicta reiciendis.</em> (Fonte da Citação)</blockquote>
+          </div>
+      </div>
+  </div>
+</section>
+    <div class="main">
+    <article>
+    <h2>Titulo do Artigo </h2>
+    <br>    
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h3><b>Subtítulo</b></h3>  
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p><br>         
+</article>
+</div>
+<div vw class="enabled" id="PluginLibras" aria-labelledby="tradutordelibras">
+    <div vw-access-button class="active" role="button"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <footer  class="contentinfo">
+    <p><a href="https://educafrotech.herokuapp.com" target="_blank" style="color:black"><b>@Educafrotech</b></a></p>  
+</footer>
+</body>
+</html>
